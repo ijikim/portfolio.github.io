@@ -279,7 +279,10 @@ header>*{
 .skill_css .skill_img{background: url(../image/skill_css.png) no-repeat 0 0;}
 .skill_java .skill_img{background: url(../image/skill_js.png) no-repeat 0 0;}
 .skill_jquery .skill_img{background: url(../image/skill_jq.png) no-repeat 0 0;}
-.back>h3{text-align: center;}
+.back>h3{
+    text-align: center;
+    margin-bottom: 15px;
+}
 .back>p{line-height: 24px;}
 
 /* project style */
