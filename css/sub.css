@@ -174,9 +174,9 @@ details>ul, details>p{
 .color_box{display: flex;}
 .color_box>span{
     display: block;
-    width: 60px;
-    height: 60px;
-    line-height: 60px;
+    width: 52px !important;
+    height: 52px !important;
+    line-height: 52px !important;
     text-align: center;
     margin: 5px 0;
     font-size: 0;
@@ -265,7 +265,7 @@ details>ul, details>p{
     align-items: center;
 }
 .project03_box .icon_box>img{
-    width: 70px;
+    width: 70px !important;
     aspect-ratio: 1;
     transition: transform 0.3s ease;
 }
