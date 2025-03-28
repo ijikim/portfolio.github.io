@@ -163,20 +163,6 @@ $(function(){
         }
     });
 
-    const ani6 = gsap.timeline();
-    ani6.to("#parallax01 p", {autoAlpha: 0})
-
-    ScrollTrigger.create({
-        animation: ani6,
-        trigger: "#parallax01",
-        start: "top top",
-        end: "+=2000",
-        scrub: true,
-        pin: true,
-        anticipatePin: 1,
-        markers: false,
-    });
-
     // ---------- progress ---------- 
     gsap.to("progress", {
         value: 100,
