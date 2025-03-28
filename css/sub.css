@@ -10,21 +10,19 @@
 }
 
 /* highlight style */
-/* 드래그할 때 선택된 영역의 색상 변경 */
 ::selection{
-    background-color: #FFFAC8; /* 하이라이트 배경색*/
-    color: black; /* 선택된 글자의 색상*/
+    background-color: #FFFAC8;
+    color: black;
 }
-
-/* 웹kit 기반 브라우저에 대해 추가 스타일 */
 ::-moz-selection{
     background-color: #FFFAC8;
     color: black;
 }
 
 /* details&summary style */
-summary::-webkit-details-marker{display: none;} /* Safari 브라우저용 사용자 정의 스타일 */
-summary{list-style-type: none;} /* 그 외의 브라우저용 사용자 정의 스타일 */
+summary::-webkit-details-marker{display: none;}
+summary{list-style-type: none;}
+
 .content_details{
     display: flex;
     flex-direction: column;
@@ -41,11 +39,18 @@ details>ul, details>p{
     border-radius: 5px;
     background: #fff;
 }
-.content01 summary::marker {content: '🙂 ' !important;}
-.content01 details[open]>summary::marker{content: '😆 ' !important;}
+
+/* ✅ summary 마커 스타일 변경 */
+.content01 summary::before {
+    content: '🙂 ';
+    font-size: 1.2em;
+    margin-right: 5px;
+}
+.content01 details[open] > summary::before {
+    content: '😆 ';
+}
 
 /* Header style */
-/* project01 Header style */
 #project_header01{
     width: 100%;
     height: 200px;
@@ -62,45 +67,6 @@ details>ul, details>p{
     max-width: 700px;
     aspect-ratio: 897/141;
     background: url(../image/mongttang_logo.png) no-repeat center center;
-    background-size: cover;
-}
-/* project02 Header style */
-#project_header02{
-    width: 100%;
-    height: 200px;
-    background: url(../image/project_bg_02.jpg) no-repeat center center;
-    background-size: cover;
-    aspect-ratio: 1430/634;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-#project_header02>#brand_logo{
-    font-size: 0;
-    width: 70vw;
-    max-width: 500px;
-    aspect-ratio: 1190/290;
-    background: url(../image/pickthefit_logo.png) no-repeat center center;
-    background-size: cover;
-}
-
-/* project03 Header style */
-#project_header03{
-    width: 100%;
-    height: 200px;
-    background: url(../image/project_bg_03.jpg) no-repeat center center;
-    background-size: cover;
-    aspect-ratio: 1440/634;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-#project_header03>#brand_logo{
-    font-size: 0;
-    width: 70vw;
-    max-width: 500px;
-    aspect-ratio: 490/70;
-    background: url(../image/zipsomun_logo.png) no-repeat center center;
     background-size: cover;
 }
 
@@ -137,147 +103,52 @@ details>ul, details>p{
 }
 .content_img>div>img{width: 50%;padding: 20px;}
 
-/* content01 style */
-.content01>.content_text{
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+/* ✅ project01 content02 마커 변경 */
+.project01_box>.content02 summary::before {
+    content: '🍮 ';
+    font-size: 1.2em;
+    margin-right: 5px;
 }
-/* project01 content02 style */
-.project01_box>.content02 summary::marker {content: '🍮 ' !important;}
 
-/* project02 content02 style */
-.project02_box>.content02 ul>li::marker{content: '👕 ' !important;}
-.project02_box>.content02 ul{padding-left: 28px;}
+/* ✅ project02 content02 마커 변경 */
+.project02_box>.content02 ul {
+    list-style: none;
+    padding-left: 0;
+}
+.project02_box>.content02 ul>li {
+    position: relative;
+    padding-left: 28px;
+}
+.project02_box>.content02 ul>li::before {
+    content: '👕 ';
+    font-size: 1.2em;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
 
-/* project03 content02 style */
+/* ✅ project03 content02 스타일 */
 .project03_box>.content02 ul{
     padding: 10px;
     border-radius: 5px;
     background: #f2f2f2;
 }
 
-/* content03 style */
-.content03>.content_title>ul,
-.content03>.content_text>ul{
-    margin-top: 10px;
-    padding: 10px;
-    border-radius: 5px;
-    background: #f2f2f2;
+/* ✅ project01 content03 마커 변경 */
+.project01_box>.content03>.content_text>ul {
+    padding-left: 28px;
 }
-.content03>.content_title>ul>li,
-.content03>.content_text>ul>li{margin-bottom: 5px;}
-.content03>.content_title>ul>li:last-child,
-.content03>.content_text>ul>li:last-child{margin-bottom: 0;}
-.content_color, .content_icon{margin-bottom: 15px;}
-.content_color:last-child, .content_icon:last-child{margin-bottom: 0;}
-.color_box{display: flex;}
-.color_box>span{
-    display: block;
-    width: 52px !important;
-    height: 52px !important;
-    line-height: 52px !important;
-    text-align: center;
-    margin: 5px 0;
-    font-size: 0;
+.project01_box>.content03>.content_text>ul>li {
+    position: relative;
+    padding-left: 28px;
 }
-.color_box>span:hover{font-size: 12px;}
-
-/* project01 content03 style */
-.project01_box>.content03>.content_text>ul{padding-left: 28px;}
-.project01_box>.content03>.content_text>ul>li::marker{content: '🤍 ';}
-.project01_box .icon_box, .sub_icon_box{
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    margin: 10px 0;
+.project01_box>.content03>.content_text>ul>li::before {
+    content: '🤍 ';
+    font-size: 1.2em;
+    position: absolute;
+    left: 0;
+    top: 0;
 }
-.project01_box .icon_box>img{
-    width: 55px !important;
-    height: 55px !important;
-}
-.project01_box .sub_icon_box>img{
-    width: 50px !important;
-}
-.project01_box .icon_box>img:hover{opacity: 0.8;}
-
-/* project02 content03 style */
-.project02_box>.content03 ul{
-    margin-top: 10px;
-    padding: 10px;
-    border-radius: 5px;
-    background: #f2f2f2;
-}
-.project02_box>.content03 .content_img{margin-top: 20px;}
-
-/* project03 content03 style */
-.zipsomun_plan{
-    width: 100%;
-    max-height: 6525px;
-    border: 7px solid #f2f2f2;
-    border-radius: 5px;
-    aspect-ratio: 1000/6525;
-    background: url(../image/zipsomun_plan.png.jpg)no-repeat center center;
-    background-size: contain;
-    font-size: 0;
-}
-
-/* project01 content04 style */
-.mongttang_uiux{
-    width: 100%;
-    max-height: 3300px;
-    border: 7px solid #f2f2f2;
-    border-radius: 5px;
-    aspect-ratio: 1000/3300;
-    background: url(../image/mongttang_uiux.jpg)no-repeat center center;
-    background-size: contain;
-    font-size: 0;
-}
-
-/* project02 content04 style */
-.pickthefit_uiux{
-    width: 100%;
-    max-height: 2600px;
-    border: 7px solid #f2f2f2;
-    border-radius: 5px;
-    aspect-ratio: 1000/2600;
-    background: url(../image/pickthefit_uiux.jpg)no-repeat center center;
-    background-size: contain;
-    font-size: 0;
-}
-
-/* project03 content04 style */
-.zipsomun_uiux{
-    width: 100%;
-    max-height: 2600px;
-    border: 7px solid #f2f2f2;
-    border-radius: 5px;
-    aspect-ratio: 1000/2600;
-    background: url(../image/zipsomun_uiux.jpg)no-repeat center center;
-    background-size: contain;
-    font-size: 0;
-}
-.project03_box .icon_container,
-.project03_box .icon_container_bottom{
-    display: flex;
-    gap: 20px;
-    flex-wrap: wrap;
-}
-.project03_box .icon_box{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-.project03_box .icon_box>img{
-    width: 70px !important;
-    height: 70px !important;
-    aspect-ratio: 1;
-    transition: transform 0.3s ease;
-}
-.project03_box .icon_box>p{font-size: 10px;}
-.project03_box .icon_container_bottom>.icon_box>img:hover{transform: scale(1.1);}
-
 
 /* footer style */
 #project_footer01{
