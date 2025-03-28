@@ -70,8 +70,8 @@
 /* desktop style */
 @media screen and (min-width: 1366px){
     .modal-content{
-        width: calc(100vw - 200px);
-        height: calc(100vh - 300px);
+        width: calc(100vw - 500px);
+        height: calc(100vh - 200px);
     }
     .modal-button{margin-bottom: 30px;}
 }
