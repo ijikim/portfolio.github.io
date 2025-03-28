@@ -192,8 +192,8 @@ details>ul, details>p{
     gap: 10px;
     margin: 10px 0;
 }
-.project01_box .icon_box>img{width: 55px;}
-.project01_box .sub_icon_box>img{width: 50px;}
+.project01_box .icon_box>img{width: 55px !important;}
+.project01_box .sub_icon_box>img{width: 50px !important;}
 .project01_box .icon_box>img:hover{opacity: 0.8;}
 
 /* project02 content03 style */
