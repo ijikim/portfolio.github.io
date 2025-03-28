@@ -1,12 +1,3 @@
-/*Basic style*/
-*{margin: 0; padding: 0; box-sizing: border-box;}
-a{text-decoration: none; color: #333;}
-li{list-style: none;}
-body, html{
-    overflow-x: hidden !important;
-    color: #333;
-}
-
 /* display none style */
 @media screen and (min-width: 1366px){
     .desktop_none{display: none !important;}
@@ -123,11 +114,11 @@ details>ul, details>p{
     gap: 20px;
     padding-top: 30px;
 }
-h3{margin-bottom: 10px;}
-.font18{line-height: 32px;}
-.font15{line-height: 28px;}
-.font12{line-height: 20px;}
-.content_img{
+#contents_box h3{margin-bottom: 10px;}
+#contents_box .font18{line-height: 32px;}
+#contents_box .font15{line-height: 28px;}
+#contents_box .font12{line-height: 20px;}
+#contents_box .content_img{
     border: 7px solid #f2f2f2;
     border-radius: 5px;
     background: #fff;
