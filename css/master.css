@@ -539,17 +539,17 @@ address{
 
     /* skill style */
     .section03{gap: 80px;}
-    .flip_box{width: 790px; gap: 20px;}
-    .flip{width: 250px; height: 250px;}
+    .flip_box{width: 700px; gap: 20px;}
+    .flip{width: 220px; height: 220px;}
     .back{
-        padding: 30px;
+        padding: 20px;
         box-sizing: border-box;
         background: #F2F2F2; 
         transform: rotateY(180deg);
     }
     .flip:hover .card{transform: rotateY(180deg);}
-    .skill_front{width: 200px; height: 200px;}
-    .skill_img_box{width: 160px; height: 160px;}
+    .skill_front{width: 180px; height: 180px;}
+    .skill_img_box{width: 150px; height: 150px;}
     .skill_img{
         width: 80px;
         height: 80px;
