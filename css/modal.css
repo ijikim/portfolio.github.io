@@ -51,7 +51,10 @@
     align-items: center;
     color: #333 !important;
 }
-.morebutton svg, .closeModal svg{display: block;}
+.morebutton svg, .closeModal svg{
+    display: block;
+    vertical-align: middle;
+}
 .button_box .morebutton:hover, .button_box .closeModal:hover{
     background: #aaa;
     color: #000 !important;
