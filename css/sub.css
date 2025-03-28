@@ -42,7 +42,7 @@ details>ul, details>p{
     background: #fff;
 }
 
-/* content01 summary */
+/* ✅ details summary 마커 적용 */
 .content01 summary::before {
     content: '🙂 ';
     font-size: 1.2em;
@@ -145,17 +145,25 @@ details>ul, details>p{
 }
 .content_img>div>img{width: 50%;padding: 20px;}
 
+/* content01 style */
+.content01>.content_text{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
 /* project01 content02 style */
-.project01_box>.content02 summary::before {
+
+/* ✅ project01 content02 마커 적용 */
+.project01_box > .content02 summary::before {
     content: '🍮 ';
 }
 
 /* project02 content02 style */
-.project02_box>.content02 ul>li::before{
+/* ✅ project02 content02 마커 적용 */
+.project02_box > .content02 ul > li::before {
     content: '👕 ';
     margin-right: 5px;
 }
-.project02_box>.content02 ul{padding-left: 28px;}
 
 /* project03 content02 style */
 .project03_box>.content02 ul{
@@ -164,11 +172,132 @@ details>ul, details>p{
     background: #f2f2f2;
 }
 
+/* content03 style */
+.content03>.content_title>ul,
+.content03>.content_text>ul{
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    background: #f2f2f2;
+}
+.content03>.content_title>ul>li,
+.content03>.content_text>ul>li{margin-bottom: 5px;}
+.content03>.content_title>ul>li:last-child,
+.content03>.content_text>ul>li:last-child{margin-bottom: 0;}
+.content_color, .content_icon{margin-bottom: 15px;}
+.content_color:last-child, .content_icon:last-child{margin-bottom: 0;}
+.color_box{display: flex;}
+.color_box>span{
+    display: block;
+    width: 52px !important;
+    height: 52px !important;
+    line-height: 52px !important;
+    text-align: center;
+    margin: 5px 0;
+    font-size: 0;
+}
+.color_box>span:hover{font-size: 12px;}
+
 /* project01 content03 style */
-.project01_box>.content03>.content_text>ul>li::before{
+
+/* ✅ project01 content03 마커 적용 */
+.project01_box > .content03 > .content_text > ul > li::before {
     content: '🤍 ';
     margin-right: 5px;
 }
+
+.project01_box .icon_box, .sub_icon_box{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 10px 0;
+}
+.project01_box .icon_box>img{
+    width: 55px !important;
+    height: 55px !important;
+}
+.project01_box .sub_icon_box>img{
+    width: 50px !important;
+}
+.project01_box .icon_box>img:hover{opacity: 0.8;}
+
+/* project02 content03 style */
+.project02_box>.content03 ul{
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    background: #f2f2f2;
+}
+.project02_box>.content03 .content_img{margin-top: 20px;}
+
+/* project03 content03 style */
+.zipsomun_plan{
+    width: 100%;
+    max-height: 6525px;
+    border: 7px solid #f2f2f2;
+    border-radius: 5px;
+    aspect-ratio: 1000/6525;
+    background: url(../image/zipsomun_plan.png.jpg)no-repeat center center;
+    background-size: contain;
+    font-size: 0;
+}
+
+/* project01 content04 style */
+.mongttang_uiux{
+    width: 100%;
+    max-height: 3300px;
+    border: 7px solid #f2f2f2;
+    border-radius: 5px;
+    aspect-ratio: 1000/3300;
+    background: url(../image/mongttang_uiux.jpg)no-repeat center center;
+    background-size: contain;
+    font-size: 0;
+}
+
+/* project02 content04 style */
+.pickthefit_uiux{
+    width: 100%;
+    max-height: 2600px;
+    border: 7px solid #f2f2f2;
+    border-radius: 5px;
+    aspect-ratio: 1000/2600;
+    background: url(../image/pickthefit_uiux.jpg)no-repeat center center;
+    background-size: contain;
+    font-size: 0;
+}
+
+/* project03 content04 style */
+.zipsomun_uiux{
+    width: 100%;
+    max-height: 2600px;
+    border: 7px solid #f2f2f2;
+    border-radius: 5px;
+    aspect-ratio: 1000/2600;
+    background: url(../image/zipsomun_uiux.jpg)no-repeat center center;
+    background-size: contain;
+    font-size: 0;
+}
+.project03_box .icon_container,
+.project03_box .icon_container_bottom{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.project03_box .icon_box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.project03_box .icon_box>img{
+    width: 70px !important;
+    height: 70px !important;
+    aspect-ratio: 1;
+    transition: transform 0.3s ease;
+}
+.project03_box .icon_box>p{font-size: 10px;}
+.project03_box .icon_container_bottom>.icon_box>img:hover{transform: scale(1.1);}
+
 
 /* footer style */
 #project_footer01{
