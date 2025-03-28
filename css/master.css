@@ -87,6 +87,9 @@ header{
     border-top: 3px solid #333;
     border-bottom: 1px solid #333;
     backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    -moz-backdrop-filter: blur(10px);
+    -ms-backdrop-filter: blur(10px);
     position: fixed;
     top: 0;
     left: 0;
