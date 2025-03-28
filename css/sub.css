@@ -42,12 +42,12 @@ details>ul, details>p{
 
 /* ✅ summary 마커 스타일 변경 */
 .content01 summary::before {
-    content: '🙂 ';
+    content: ' 🙂 ';
     font-size: 1.2em;
     margin-right: 5px;
 }
 .content01 details[open] > summary::before {
-    content: '😆 ';
+    content: ' 😆 ';
 }
 
 /* Header style */
@@ -105,7 +105,7 @@ details>ul, details>p{
 
 /* ✅ project01 content02 마커 변경 */
 .project01_box>.content02 summary::before {
-    content: '🍮 ';
+    content: ' 🍮 ';
     font-size: 1.2em;
     margin-right: 5px;
 }
@@ -120,7 +120,7 @@ details>ul, details>p{
     padding-left: 28px;
 }
 .project02_box>.content02 ul>li::before {
-    content: '👕 ';
+    content: ' 👕 ';
     font-size: 1.2em;
     position: absolute;
     left: 0;
@@ -143,7 +143,7 @@ details>ul, details>p{
     padding-left: 28px;
 }
 .project01_box>.content03>.content_text>ul>li::before {
-    content: '🤍 ';
+    content: ' 🤍 ';
     font-size: 1.2em;
     position: absolute;
     left: 0;
