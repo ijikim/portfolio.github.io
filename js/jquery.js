@@ -77,4 +77,7 @@ $(function(){
         window.scrollTo(0, document.body.scrollHeight);  // 페이지 맨 하단으로 이동
     });
 
+    if (!CSS.supports('backdrop-filter', 'blur(10px)')) {
+        document.querySelector('header').style.background = 'rgba(255, 255, 255, 0.5)'; // 블러 대신 반투명
+    }
 });
