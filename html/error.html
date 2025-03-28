@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- font link -->
+    <link href="https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600;700;800&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600;700;800&family=DM+Serif+Display:ital@0;1&family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+    <!-- css link -->
+    <link rel="stylesheet" href="../css/font.css">
+    <style>
+        /*Basic style*/
+        *{margin: 0; padding: 0; box-sizing: border-box;}
+        a{color: #333;}
+        li{list-style: none;}
+        body, html{
+            overflow-x: hidden !important;
+            color: #333;
+        }
+
+        body{
+            position: relative;
+            width: 100vw;
+            height: 100vh;
+        }
+        .error_box{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            gap: 50px;
+        }
+        h1{line-height: 130px;}
+        span{margin: 0 10px;}
+        .button *{color: #666 !important;}
+        .button a:hover{color: #333 !important;}
+    </style>
+    <title>404</title>
+</head>
+<body>
+    <div class="error_box">
+        <h1 class="serifR font200">404</h1>
+        <p class="font15">죄송합니다. 해당 페이지는 현재 준비중입니다.</p>
+        <div class="font18 button">
+            <a href="javascript:void(0);" onclick="window.history.back();">뒤로가기</a>
+            <span>또는</span>
+            <a href="javascript:void(0);" onclick="window.close();">닫기</a>
+        </div>
+    </div>
+</body>
+</html>

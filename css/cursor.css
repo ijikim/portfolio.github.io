@@ -1,0 +1,33 @@
+@media screen and (min-width: 1366px){
+    *{cursor: none;}
+    .cursor{
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 99999;
+        background-color: black;
+        width: 15px; /* 기본 너비 */
+        height: 15px; /* 기본 높이 */
+        border-radius: 50%;
+        pointer-events: none;
+        transform: translate(-50%, -50%);
+        opacity: 1; /* 초기 투명도 없음 */
+        transition: width 0.3s ease, height 0.3s ease, opacity 0.3s ease; /* 크기 변화 및 투명도 애니메이션 */
+    }
+    .cursor.expand{
+        width: 20px; /* 클릭 시 커지는 너비 */
+        height: 20px; /* 클릭 시 커지는 높이 */
+        opacity: 0.5; /* 클릭 시 투명도 0.5로 설정 */
+    }
+}
+
+/* 드래그할 때 선택된 영역의 색상 변경 */
+::selection{
+    background-color: #fff898; /* 하이라이트 배경색*/
+    color: black; /* 선택된 글자의 색상*/
+}
+/* 웹kit 기반 브라우저에 대해 추가 스타일 */
+::-moz-selection{
+    background-color: #fff898;
+    color: black;
+}

@@ -1,0 +1,28 @@
+/* font style */
+.serifR{
+    font-family: "DM Serif Display", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.notoB{
+    font-family: "Noto Sans KR", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+body, html, .notoR{
+    font-family: "Noto Sans KR", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* font size */
+.font200{font-size: clamp(128px, 18vw, 200px);}
+.font100{font-size: clamp(70px, 14.5vw, 100px);}
+.font38{font-size: clamp(26px, 5vw, 38px);}
+.font28{font-size: clamp(24px, 4.5vw, 28px);}
+.font24{font-size: clamp(20px, 3vw, 24px);}
+.font18{font-size: clamp(16px, 1.8vw, 18px);}
+.font15{font-size: clamp(14px, 1.5vw, 15px);}
+.font12{font-size: clamp(11px, 1.3vw, 12px);}
