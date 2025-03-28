@@ -41,8 +41,8 @@ details>ul, details>p{
     border-radius: 5px;
     background: #fff;
 }
-.content01 summary::marker {content: '🙂 ';}
-.content01 details[open]>summary::marker{content: '😆 ';}
+.content01 summary::marker {content: '🙂 ' !important;}
+.content01 details[open]>summary::marker{content: '😆 ' !important;}
 
 /* Header style */
 /* project01 Header style */
@@ -144,10 +144,10 @@ details>ul, details>p{
     gap: 10px;
 }
 /* project01 content02 style */
-.project01_box>.content02 summary::marker {content: '🍮 ';}
+.project01_box>.content02 summary::marker {content: '🍮 ' !important;}
 
 /* project02 content02 style */
-.project02_box>.content02 ul>li::marker{content: '👕 ';}
+.project02_box>.content02 ul>li::marker{content: '👕 ' !important;}
 .project02_box>.content02 ul{padding-left: 28px;}
 
 /* project03 content02 style */
