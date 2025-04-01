@@ -425,7 +425,7 @@ address{
         width: 475px;
         height: 600px;
         aspect-ratio: 475/600;
-        background: url(../image/profile_img02_s.jpg)no-repeat;
+        background: url(../image/profile_img02.jpg)no-repeat;
         background-size: 100% 100%;
     }
     .hello{
