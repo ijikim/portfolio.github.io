@@ -172,7 +172,7 @@ header>*{
 }
 .profile_img01{
     aspect-ratio: 475/600;
-    background: url(../image/profile_img01_s.jpg)no-repeat;
+    background: url(../image/profile_img01.jpg)no-repeat;
     background-size: 100% 100%;
 }
 .about_text_box{
@@ -191,7 +191,7 @@ header>*{
 .about_me span{display: inline-block; width: 72px;}
 .profile_img02{
     aspect-ratio: 475/600;
-    background: url(../image/profile_img02_s.jpg)no-repeat;
+    background: url(../image/profile_img02.jpg)no-repeat;
     background-size: 100% 100%;
 }
 .hello{
