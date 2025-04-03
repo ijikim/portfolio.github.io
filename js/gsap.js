@@ -104,13 +104,13 @@ $(function(){
     }
 
     const skills = [
-        { max: 80, classname: '.skill_photo', colorname: '#FFF' },
-        { max: 80, classname: '.skill_illus', colorname: '#FFF' },
-        { max: 80, classname: '.skill_xd', colorname: '#FFF' },
+        { max: 90, classname: '.skill_photo', colorname: '#FFF' },
+        { max: 90, classname: '.skill_illus', colorname: '#FFF' },
+        { max: 70, classname: '.skill_xd', colorname: '#FFF' },
         { max: 80, classname: '.skill_figma', colorname: '#FFF' },
         { max: 80, classname: '.skill_html', colorname: '#FFF' },
         { max: 80, classname: '.skill_css', colorname: '#FFF' },
-        { max: 60, classname: '.skill_java', colorname: '#FFF' },
+        { max: 50, classname: '.skill_java', colorname: '#FFF' },
         { max: 60, classname: '.skill_jquery', colorname: '#FFF' },
     ];
 
