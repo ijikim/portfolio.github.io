@@ -41,8 +41,15 @@ details>ul, details>p{
     border-radius: 5px;
     background: #fff;
 }
-.content01 summary::marker {content: '🙂 ';}
-.content01 details[open]>summary::marker{content: '😆 ';}
+/* ✅ details summary 마커 적용 */
+.content01 summary::before {
+    content: '🙂 ';
+    font-size: 1.2em;
+    margin-right: 5px;
+}
+.content01 details[open] > summary::before {
+    content: '😆 ';
+}
 
 /* Header style */
 /* project01 Header style */
@@ -178,8 +185,14 @@ details>ul, details>p{
 }
 
 /* project04 content02 style */
-.project04_box>.content02 summary::marker {content: '🙂 ';}
-.project04_box>.content02 details[open]>summary::marker{content: '😆 ';}
+.project04_box>.content02 summary::before {
+    content: '🙂 ';
+    font-size: 1.2em;
+    margin-right: 5px;
+}
+.project04_box>.content02 details[open] > summary::before {
+    content: '😆 ';
+}
 
 /* content03 style */
 .content03>.content_title>ul,
