@@ -206,6 +206,10 @@ header>*{
 .hello>span:nth-child(4){transform: rotate(5deg);}
 .hello>span:nth-child(5){transform: rotate(10deg);}
 .hello>span:nth-child(6){transform: rotate(-10deg);}
+.blog:hover{
+    background: #F2F2F2 !important;
+    cursor: pointer;
+}
 
 /* Skill */
 .section03{
