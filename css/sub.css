@@ -110,7 +110,6 @@ details>ul, details>p{
     background: url(../image/zipsomun_logo.png) no-repeat center center;
     background-size: cover;
 }
-
 /* project04 Header style */
 #project_header04{
     width: 100%;
@@ -171,11 +170,17 @@ details>ul, details>p{
     gap: 10px;
 }
 /* project01 content02 style */
-.project01_box>.content02 summary::marker {content: '🍮 ';}
+/* ✅ project01 content02 마커 적용 */
+.project01_box > .content02 summary::before {
+    content: '🍮 ';
+}
 
 /* project02 content02 style */
-.project02_box>.content02 ul>li::marker{content: '👕 ';}
-.project02_box>.content02 ul{padding-left: 28px;}
+/* ✅ project02 content02 마커 적용 */
+.project02_box > .content02 ul > li::before {
+    content: '👕 ';
+    margin-right: 5px;
+}
 
 /* project03 content02 style */
 .project03_box>.content02 ul{
@@ -221,8 +226,11 @@ details>ul, details>p{
 .color_box>span:hover{font-size: 12px;}
 
 /* project01 content03 style */
-.project01_box>.content03>.content_text>ul{padding-left: 28px;}
-.project01_box>.content03>.content_text>ul>li::marker{content: '🤍 ';}
+/* ✅ project01 content03 마커 적용 */
+.project01_box > .content03 > .content_text > ul > li::before {
+    content: '🤍 ';
+    margin-right: 5px;
+}
 .project01_box .icon_box, .sub_icon_box{
     display: flex;
     align-items: center;
@@ -235,7 +243,6 @@ details>ul, details>p{
 }
 .project01_box .sub_icon_box>img{
     width: 50px !important;
-    height: 50px !important;
 }
 .project01_box .icon_box>img:hover{opacity: 0.8;}
 
